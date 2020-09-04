@@ -11,11 +11,10 @@ integrate MongoDb
 laravel authentication
 
 	1.composer require laravel/ui "^1.0" --dev
-
 	2.php artisan ui vue --auth
+    3.composer require tymon/jwt-auth
 npm packages
 
 	1.npm install
 	2.npm install vue
 	3.npm install vue-router
-	

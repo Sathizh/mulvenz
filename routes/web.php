@@ -11,14 +11,19 @@
 |
 */
 
-Route::get('/vue', function () {
+Route::any('{slug}', function () {
     return view('welcome');
 });
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/sample', function () {
-    return view('vue');
+Route::get('/ ', function () {
+    return response()->json([
+        'data'=>'dummy',
+    ]);
 });

@@ -31,5 +31,5 @@ Vue.component('mycomp', require('./components/mycomp.vue').default);
 
 const app = new Vue({
     el: '#app',
-    router,
+    router
 });
